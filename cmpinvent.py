@@ -5,7 +5,7 @@
 # Contact: andreaskreisig@gmail.com
 # License: MIT
 
-# Copyright (c) 2019 Andreas Kreisig
+# Copyright (c) 2019, 2020 Andreas Kreisig
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy of
 # this software and associated documentation files (the "Software"), to deal in
@@ -43,11 +43,11 @@ parser.add_argument('-c', '--check', help="Check for double entries in the CSV f
                                           " -M or -i option to be set.", action="store_true")
 parser.add_argument('-n', '--network', type=str, help="Only consider hosts with a certain network address."
                                                       " Must be given in CIDR notation.")
-parser.add_argument('-i', '--index', help="Add an index number to each entry in the CSV file.", action="store_true")
+parser.add_argument('-i', '--index', help="Add an index number to each entry in the CSV file.", action="store_true")  # finished
 parser.add_argument('-l', '--location', help="Prompt for the hosts location and add it to the CSV file.",
                     action="store_true")  # finished
-parser.add_argument('-I', '--ip', help="Add the IP address to the CSV file.", action="store_true")
-parser.add_argument('-M', '--mac', help="Add the MAC address to the CSV file.", action="store_true")
+parser.add_argument('-I', '--ip', help="Add the IP address to the CSV file.", action="store_true")  # finished
+parser.add_argument('-M', '--mac', help="Add the MAC address to the CSV file.", action="store_true")  # finished
 parser.add_argument('-H', '--host', help="Add the hostname to the CSV file.", action="store_true")  # finished
 parser.add_argument('-C', '--connected', help="Only consider NICs which are connected to a network.",
                     action="store_true")
